@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" -brandsintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="header.css">
+    <title>Pet</title>
+</head>
+<body>
+    <section class="sub2-header">
+        <nav>
+            <a href="pet.html"><img src="logo/logo.svg"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                    <ul>
+                        <li><a href="pet.html">HOME</a></li> 
+                        <li><a href="gallery.html">GALLERY</a></li> 
+                        <li><a href="contact.html">CONTACT US</a></li> 
+                        <li><a href="donate.html">DONATE</a></li>
+                        <li><a href="signup.html">LOGIN / SIGN UP</a></li>  
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>DONATE</h1>
+    </section>
+<!----donate--->
+
+<section class="donate">
+
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">Billing Address</h3>
+
+                    <div class="inputbox">
+                        <span>Full name :</span>
+                        <input type="text" placeholder="John cena">
+                    </div>
+                    <div class="inputbox">
+                        <span>Email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputbox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="room - street - loacality">
+                    </div>
+                    <div class="inputbox">
+                        <span>City :</span>
+                        <input type="text" placeholder="Mumbai">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>State :</span>
+                            <input type="text" placeholder="United">
+                        </div>
+                        <div class="inputbox">
+                            <span>ZIP code :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">Payment</h3>
+
+                    <div class="inputbox">
+                        <span>Cards accepted :</span>
+                        <img src="imgs/credit-cards-accepted-logo.jpg" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="John cena">
+                    </div>
+                    <div class="inputbox">
+                        <span>Credit card number :</span>
+                        <input type="text" placeholder="1111 2222 3333 4444">
+                    </div>
+                    <div class="inputbox">
+                        <span>Exp month :</span>
+                        <input type="text" placeholder="January">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>Exp year :</span>
+                            <input type="text" placeholder="2024">
+                        </div>
+                        <div class="inputbox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Proceed to checkout" class="submit-btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+    <section class="footer">
+            <a href="pet.html">
+                <img src="logo/flogo.png">
+            </a>
+            <div class="signup">
+                <p>To get the lastest on pet adoption and pet care, sign up for the Petfinder newsletter.</p>
+                <a href="signup.html"><button>SIGN UP</button></a>
+            </div>
+    </section>
+    <div class="copyrights">
+        <div class="icons">
+            <a href="https://www.facebook.com/Petfinder"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/Petfinder"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/petfinder/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC85FmJhwKDfiXfialMvyM5g"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://in.pinterest.com/petfinder/"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+        <p>©2023 Petfinder.com</p>
+        <p>All trademarks are owned by Société  des Produits Nestlé S.A., or used with   permission.</p>
+    </div> 
+<!-----javascript----->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px"
+        }
+    </script>
+
+</body>
+</html>
